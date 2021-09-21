@@ -10,7 +10,7 @@ namespace AreaOfCircle
             string userInput = Console.ReadLine();
             bool trying = double.TryParse(userInput, out double result);
 
-            if (userInput != "" && trying) {
+            if (!String.IsNullOrWhiteSpace(userInput) && trying) {
 
                 double radius = double.Parse(userInput);
 
